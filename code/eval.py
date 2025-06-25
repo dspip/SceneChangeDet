@@ -118,7 +118,7 @@ with torch.no_grad():
             t2C = RMS_Contrast(t2)
 
 
-            res = (t0C + t1C + t2C)
+            res = (t0C + t1C +t2)/2
             #print(res.shape)
             print(res.shape)
             cv2.imshow("mask",res);
